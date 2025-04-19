@@ -47,6 +47,7 @@ dependencies:
   pigeon: ^7.0.3
   image_picker: ^1.1.2
   skeletonizer: ^1.4.3
+  dartz: ^0.10.1
   
 dev_dependencies:
   flutter_test:

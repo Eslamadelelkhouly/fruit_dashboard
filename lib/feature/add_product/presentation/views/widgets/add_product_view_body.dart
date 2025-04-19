@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:fruit_dashboard/core/widgets/custom_button.dart';
+import 'package:fruit_dashboard/feature/add_product/presentation/views/domain/entities/add_product_entity.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/feature_item_checkbox.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/image_field.dart';
@@ -86,6 +87,14 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                   if (image != null) {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
+                      AddProductEntity input = AddProductEntity(
+                        name: name,
+                        description: description,
+                        code: code,
+                        isFeatured: isFeatured,
+                        price: price,
+                        imageFile: image!,
+                      );
                     }
                   } else {
                     autovalidateMode = AutovalidateMode.always;
