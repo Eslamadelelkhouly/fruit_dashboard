@@ -45,7 +45,11 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
               SizedBox(
                 height: 16,
               ),
-              ImageField(),
+              ImageField(
+                onChange: (image) {
+                  // Handle image change
+                },
+              ),
             ],
           ),
         ),
