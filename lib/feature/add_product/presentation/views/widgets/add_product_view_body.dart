@@ -18,7 +18,7 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
   late AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   late String name, code, description;
   late double price;
-   File? image;
+  File? image;
   bool isFeatured = false;
   @override
   Widget build(BuildContext context) {
