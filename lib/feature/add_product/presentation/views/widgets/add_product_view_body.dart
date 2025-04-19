@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_check_box.dart';
-import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_text_check_box.dart';
+import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/feature_item_checkbox.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/image_field.dart';
 
