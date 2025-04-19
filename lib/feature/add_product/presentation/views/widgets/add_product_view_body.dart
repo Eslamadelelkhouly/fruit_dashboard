@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_check_box.dart';
+import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_text_check_box.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:fruit_dashboard/feature/add_product/presentation/views/widgets/image_field.dart';
 
@@ -37,10 +39,11 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                 keyboardType: TextInputType.text,
               ),
               const SizedBox(height: 16),
-              CustomTextFormField(
-                text: 'Product Description',
-                keyboardType: TextInputType.multiline,
-                maxLines: 5,
+              IsFeaturedItem(
+                onChanged: (value) {},
+              ),
+              SizedBox(
+                height: 16,
               ),
               SizedBox(
                 height: 16,
