@@ -16,6 +16,24 @@ class _CustomTextCheckBoxState extends State<IsFeaturedItem> {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        Text.rich(
+          TextSpan(
+            children: [
+              TextSpan(
+                text: 'Is featured item',
+                style: TextStyles.semiBold13.copyWith(
+                  color: Color(0xFF616A6B),
+                ),
+              ),
+            ],
+          ),
+          textAlign: TextAlign.right,
+        ),
+        Expanded(
+          child: SizedBox(
+            width: 16,
+          ),
+        ),
         CustomCheckBox(
           onChanged: (value) {
             isChecked = value;
@@ -23,24 +41,6 @@ class _CustomTextCheckBoxState extends State<IsFeaturedItem> {
             setState(() {});
           },
           isChecked: isChecked,
-        ),
-        SizedBox(
-          width: 16,
-        ),
-        Expanded(
-          child: Text.rich(
-            TextSpan(
-              children: [
-                TextSpan(
-                  text: 'Is featured item',
-                  style: TextStyles.semiBold13.copyWith(
-                    color: Color(0xFF616A6B),
-                  ),
-                ),
-              ],
-            ),
-            textAlign: TextAlign.right,
-          ),
         ),
       ],
     );
